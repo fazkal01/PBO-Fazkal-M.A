@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Login</title>
+    </head>
+    <body>
+        <div style="color: #ffffff; margin: 0; background: green; padding: 40px 20px; float: left; width: 11%; font-size: 1.5em; text-align: center;">
+            <img src="https://png.pngtree.com/png-clipart/20240627/original/pngtree-cashier-machine-cartoon-illustration-vector-clipart-png-image_15420491.png" height="100"></img>
+        </div> 
+
+        <br>
+        <h2>
+            <div style="color : rgb(8, 128, 8); padding: 40px 20px; float: left; width: 70%; font-size: 2.5em; text-align: left;">Kasir Apotik MegaPurna</div>
+        </h2>
+        <br/>
+
+        <div style="color: #35960f; padding: 20px ; float: left; width: 13%; font-size: 1.5em; text-align: left;"><ul>
+            <li><p><a href="file:///c%3A/xampp/htdocs/pbo-si2a-fazkal/index.html">Login</a></li>
+            <li><p><a href="file:///c%3A/xampp/htdocs/pbo-si2a-fazkal/home.html">Home</a></li>
+        </ul>
+        </div>
+
+        <div style="padding: 40px 0px ; float: left; width: 25%; text-align: left;">
+            <form action="proses.php" method="get">
+                <table border="0">
+                    <tr>
+                        <td>Username</td>
+                        <td>: <input type="text" name="namalengkap"></td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td>: <input type="password" name="password"></td>
+                    </tr>
+                    <tr>
+                        <td>Level</td>
+                        <td>: <select name="Level">
+                            <option value="Owner">Owner</option>
+                            <option value="Admin" selected="selected">Admin</option>
+                            <option value="Pegawai">Pegawai</option>
+                            <option value="Pelanggang">Pelanggang</option>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" name="Login" value="Login"></td>
+                    </tr>
+        </div>
+
+    </body>
+</html>
