@@ -1,0 +1,16 @@
+body {
+    background-color: rgb(4, 44, 104); 
+    font-family: Arial, sans-serif;
+}
+ 
+p {
+    padding: 10px;
+    color: black;
+}
+script{
+    text-align: center;
+}
+table {
+    color: white;
+    text-align: center;
+}

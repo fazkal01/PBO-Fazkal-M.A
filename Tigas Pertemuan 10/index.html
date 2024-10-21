@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div style="color: #ffffff; margin: 0; background: #008cff; padding: 40px 20px; float: left; width: 11%; font-size: 1.5em; text-align: center;">
+        <img src="https://png.pngtree.com/png-clipart/20240627/original/pngtree-cashier-machine-cartoon-illustration-vector-clipart-png-image_15420491.png" height="100"></img>
+    </div>
+    <h1 style="color:white; background-color: #008cff; height: fit-content; text-align: center; font-size: 35px;">Selamat Datang di Halaman Beranda</h1>
+    <button><a href="about.html">Tentang Kami</a></button>
+    <button onclick="bukaBukuTamu()">Pesanan</button>
+ 
+    <table id="tabelBukuTamu" border="1">
+        <thead>
+            <tr>
+                <th>Nama</th>
+                <th>Email</th>
+                <th>Pesan</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data Buku Tamu akan ditampilkan di sini -->
+        </tbody>
+    </table>
+ 
+    <script>
+        function bukaBukuTamu() {
+            var nama = prompt("Masukkan Nama Anda:");
+            var email = prompt("Masukkan Email Anda:");
+            var pesan = prompt("Masukkan Pesan Anda:");
+ 
+            console.log("Nama: " + nama);
+            console.log("Email: " + email);
+            console.log("Pesan: " + pesan);
+ 
+            var table = document.getElementById("tabelBukuTamu").getElementsByTagName('tbody')[0];
+            var newRow = table.insertRow();
+ 
+            var cell1 = newRow.insertCell(0);
+            var cell2 = newRow.insertCell(1);
+            var cell3 = newRow.insertCell(2);
+ 
+            cell1.textContent = nama;
+            cell2.textContent = email;
+            cell3.textContent = pesan;
+        }
+    </script>
+</body>
+</html>
